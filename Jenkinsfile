@@ -6,12 +6,12 @@ pipeline {
            
             steps {
                 bar '''
-                    ls -la
+                    dir
                     npm --version
                     node --version
                     npm ci
                     npm run build
-                    ls -la
+                    dir
                 '''
             }
         }
